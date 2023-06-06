@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <style>
+        * {
+            background-color: rgb(52, 52, 52);
+        }
+        #container {
+            width: 80%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+            margin: 20px;
+            color: blue;
+        }
+        .item:hover{
+            background-color: black;
+            color: beige;
+        }
+        .item::after {
+            content: "❤️❤️";
+        }
+
+        .item:first-child{
+            border: 1px solid white;
+        }
+        .item:nth-child(even){
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">mamu</div>
+        <div class="item">mamu</div>
+        <div class="item">mamu</div>
+    </div>
+    <div>
+        <p>Hola como andas</p>
+        <p>Hola como andas</p>
+    </div>
+    
+</body>
+</html>
